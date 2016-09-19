@@ -1,0 +1,82 @@
+/*==============================================================================
+# CONTENT
+==============================================================================*/
+
+body {
+  font-family: $openSans;
+  background: $apogee;
+  overflow-x: hidden;
+}
+
+.locator {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  width: $contentWidth;
+  margin: 0 auto;
+}
+
+.section-separator {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid $bloom;
+  margin: 20px auto;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50vw;
+    height: 2px;
+    background: $bloom;
+  }
+
+  &::before {
+    left: 100%;
+  }
+
+  &::after {
+    right: 100%;
+  }
+}
+
+
+/*------------------------------------------------------------------------------
+# UVP
+------------------------------------------------------------------------------*/
+
+.uvp-container {
+  background: $bloom;
+  padding: 30px 60px;
+  margin-top: 40px;
+  border-radius: 3px;
+
+  h2 {
+    color: $apogee;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  p {
+    color: $apogee;
+  }
+}
+
+
+/*------------------------------------------------------------------------------
+# SELECTION
+------------------------------------------------------------------------------*/
+::selection {
+    //Opacity is a workaround to ensure highlight is opaque.
+    background: rgba(darken( $desertNight, 1% ), 0.99);
+    color: $apogee;
+}

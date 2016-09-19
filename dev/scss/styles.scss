@@ -3,6 +3,8 @@
 ==============================================================================*/
 // All styles are compiled to this file.
 
+@import 'https://fonts.googleapis.com/css?family=Lato:900|Open+Sans:300,400,400i,600';
+
 
 /*------------------------------------------------------------------------------
 # IMPORTS
@@ -10,3 +12,7 @@
 
 @import 'variables';
 @import 'reset';
+@import 'body';
+@import 'typography';
+@import 'header';
+@import 'infographic';
