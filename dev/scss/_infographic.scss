@@ -1,3 +1,13 @@
 /*==============================================================================
 # INFOGRAPHIC
 ==============================================================================*/
+
+.infographic-container {
+  background: $bloom;
+
+  .infographic-inner-wrapper {
+    width: $contentWidth;
+    margin: 0 auto;
+    height: 100%;
+  }
+}

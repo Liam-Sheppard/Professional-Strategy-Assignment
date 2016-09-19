@@ -391,8 +391,17 @@ textarea {
 ==============================================================================*/
 body {
   font-family: "Open Sans", sans-serif;
-  background: #fafaff;
-  overflow-x: hidden; }
+  background: #fafaff; }
+  body::after {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 30px solid #ff7396;
+    box-sizing: border-box; }
 
 .locator {
   position: absolute;
@@ -431,8 +440,9 @@ body {
 .uvp-container {
   background: #ff7396;
   padding: 30px 60px;
-  margin-top: 40px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 1000px; }
   .uvp-container h2 {
     color: #fafaff;
     text-align: center;
@@ -498,3 +508,9 @@ p {
 /*==============================================================================
 # INFOGRAPHIC
 ==============================================================================*/
+.infographic-container {
+  background: #ff7396; }
+  .infographic-container .infographic-inner-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%; }

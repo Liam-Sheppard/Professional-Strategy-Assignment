@@ -25,6 +25,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="language" content="en">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
 
   <!-- ICONS -->
@@ -41,29 +42,40 @@
 
   <!-- JS -->
   <script type='text/javascript' src='js/jquery-3.1.0.min.js'></script>
+  <script type='text/javascript' src='js/jquery.fullpage.min.js'></script>
   <script type='text/javascript' src='js/main.js'></script>
 
 </head>
 
 <body>
 
-  <div class='content'>
+  <div id='fullpage'>
 
-    <header class='site-header'>
+    <div class='section site-header'>
       <div class='locator'>
         <h1>Liam Sheppard</h1>
         <span class='student-no'>n8889015</span>
         <h2>Professional Strategy</h2>
-        <span class='class-details'>DXH803, 2016, Semester 2</span>
+        <span class='class-details'>DXH803 Assignment 1, 2016, Semester 2</span>
       </div> <!-- end .locator -->
-    </header> <!-- end .site-header -->
+    </div> <!-- end .site-header .section -->
 
     <!-- <div class='section-separator'></div> -->
 
-    <div class='uvp-container'>
-      <h2>I'm a Digital Problem-Solver.</h2>
-      <p>If there is a goal to achieve, I'll work out how. I'm able to put my own opinions aside and instead reach into the user's mindset and consider every element of their experience, from their motivations to their frustrations. With a research and analytics based mindset, I back up every decision I make with evidence and data. I'm willing to consider absolutely everything - even the smallest detail could make the largest change.</p>
-    </div> <!-- end .uvp-container -->
+    <div class='section'>
+      <div class='uvp-container'>
+        <h2>I'm a Digital Problem-Solver.</h2>
+        <p>If there is a goal to achieve, I'll work out how. I'm able to put my own opinions aside and instead reach into the user's mindset and consider every element of their experience, from their motivations to their frustrations. With a research and analytics based mindset, I back up every decision I make with evidence and data. I'm willing to consider absolutely everything - even the smallest detail could make the largest change.</p>
+      </div> <!-- end .uvp-container -->
+    </div> <!-- end .section -->
+
+    <div class='section infographic-container'>
+      <div class='infographic-inner-wrapper'>
+        <h2>Design Process</h2>
+        <p>I've just been given a brief from a client, what happens next?</p>
+        <a>Find Out!</a>
+      </div>
+    </div>
 
   </div> <!-- end .content -->
 
