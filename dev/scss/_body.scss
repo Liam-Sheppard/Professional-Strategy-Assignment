@@ -4,19 +4,8 @@
 
 body {
   font-family: $openSans;
-  background: $apogee;
-
-  &::after {
-    content: '';
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    border: 30px solid $bloom;
-    box-sizing: border-box;
-  }
+  background: $bloom;
+  color: $apogee;
 }
 
 .locator {
@@ -27,61 +16,27 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.content {
-  width: $contentWidth;
-  margin: 0 auto;
-}
+/*------------------------------------------------------------------------------
+# INFOGRAPHIC
+------------------------------------------------------------------------------*/
 
-.section-separator {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  border: 2px solid $bloom;
-  margin: 20px auto;
-  position: relative;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 50vw;
-    height: 2px;
+.infographic-container {
+  .slide {
     background: $bloom;
   }
 
-  &::before {
-    left: 100%;
-  }
+  .infographic-inner-wrapper {
+    width: $contentWidth;
+    margin: 0 auto 110px;
+    height: 60vh;
 
-  &::after {
-    right: 100%;
-  }
-}
-
-
-/*------------------------------------------------------------------------------
-# UVP
-------------------------------------------------------------------------------*/
-
-.uvp-container {
-  background: $bloom;
-  padding: 30px 60px;
-  border-radius: 3px;
-  margin: 0 auto;
-  width: $contentWidth;
-
-  h2 {
-    color: $apogee;
-    text-align: center;
-    font-size: 2.5em;
-  }
-
-  p {
-    color: $apogee;
+    .infographic-image {
+      width: 100%;
+      height: 33.33%;
+    }
   }
 }
+
 
 
 /*------------------------------------------------------------------------------

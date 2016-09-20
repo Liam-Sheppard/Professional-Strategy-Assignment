@@ -17,3 +17,14 @@ p {
   font-size: 14pt;
   line-height: 150%;
 }
+
+.infographic-title {
+  font-size: 5rem;
+  text-align: center;
+
+  span {
+    color: #ff8fab;
+    font-size: 3rem;
+    margin-right: 3px;
+  }
+}

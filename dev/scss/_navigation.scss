@@ -1,0 +1,166 @@
+/*==============================================================================
+# NAVIGATION
+==============================================================================*/
+
+.fp-slidesNav {
+  height: 40px;
+  padding: 0 5px;
+  box-sizing: border-box;
+
+  &.bottom {
+    bottom: 140px;
+  }
+
+  &::before,
+  &::after,
+  .slideTimeline::before,
+  .slideTimeline::after {
+    content: '';
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    background: $apogee;
+  }
+
+  &::before,
+  &::after {
+    top: 50%;
+  }
+
+  &::before {
+    width: 30px;
+    left: -40px;
+  }
+
+  &::after {
+    width: 40px;
+    right: -55px;
+  }
+
+  .slideTimeline {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $apogee;
+    top: 50%;
+    left: 0;
+    border-radius: 5px;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 2px;
+      border-radius: 5px;
+      position: absolute;
+      background: $apogee;
+    }
+
+    &::before {
+      width: 17px;
+      left: -80px;
+    }
+
+    &::after {
+      width: 12px;
+      right: -80px;
+    }
+  }
+
+  ul li {
+    margin: 0 17px;
+    width: 40px;
+    height: 40px;
+    a .navDot {
+      width: 16px;
+      height: 16px;
+      background: $bloom;
+      border: 2px solid $apogee;
+      transform: translate(-50%,-50%);
+
+      .sectionTitle {
+        opacity: 0;
+        color: $bloom;
+        line-height: 32px;
+        text-align: center;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110px;
+        height: 0;
+        border-radius: 2px;
+        background: $apogee;
+        transition: opacity .2s;
+        overflow: hidden;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          box-sizing: border-box;
+          bottom: -5px;
+          width: 0;
+          height: 0;
+          border: 0;
+        }
+      }
+    }
+
+    a.active {
+        .navDot {
+          width: 25px;
+          height: 25px;
+          background: $apogee;
+        }
+      }
+
+      &:hover {
+        a .navDot {
+          width: 20px;
+          height: 20px;
+
+          .sectionTitle {
+            opacity: 1;
+            height: 32px;
+            overflow: visible;
+
+            &::after {
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid $apogee;
+            }
+          }
+        }
+
+        a.active .navDot {
+          width: 25px;
+          height: 25px;
+
+          .sectionTitle {
+            width: 110px;
+            border-radius: 2px;
+          }
+      }
+    }
+  }
+
+  ul li a span,
+  ul li a.active span,
+  ul li:hover a span,
+  ul li:hover a.active span {
+    margin: 0;
+  }
+}
+
+
+.fp-controlArrow {
+
+  &.fp-next {
+
+  }
+
+  &.fp-prev {
+    
+  }
+}
