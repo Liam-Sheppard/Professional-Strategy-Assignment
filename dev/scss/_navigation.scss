@@ -2,6 +2,11 @@
 # NAVIGATION
 ==============================================================================*/
 
+
+/*------------------------------------------------------------------------------
+# TIMELINE
+------------------------------------------------------------------------------*/
+
 .fp-slidesNav {
   height: 40px;
   padding: 0 5px;
@@ -9,6 +14,7 @@
 
   &.bottom {
     bottom: 140px;
+    margin-left: -410px !important;
   }
 
   &::before,
@@ -153,14 +159,122 @@
   }
 }
 
+.iteration-timeline {
+  position: absolute;
+  left: 175px;
+  top: 20px;
+  height: 55px;
+
+  &::after {
+    position: absolute;
+    content: '8';
+    left: 50%;
+    top: 50%;
+  }
+}
+
+.iteration-timeline-infinity {
+  position: absolute;
+  width: 200px;
+  font-size: 1.1em;
+  top: 70px;
+  left: 275px;
+}
+
+
+
+/*------------------------------------------------------------------------------
+# ARROWS
+------------------------------------------------------------------------------*/
 
 .fp-controlArrow {
+  transform: translateY(-50%);
+
+  &.fp-next,
+  &.fp-prev {
+    border: 2px solid $apogee;
+    width: 40px;
+    height: 40px;
+    transition: all .1s;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 2px;
+      background: $apogee;
+      border-radius: 5px;
+      transition: all .1s;
+    }
+
+    &:hover {
+      background: $apogee;
+      color: $apogee;
+
+      &::before,
+      &::after {
+        background: $bloom;
+      }
+    }
+  }
 
   &.fp-next {
+    right: calc( (100vw - 800px) / 2);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 
+    &:active {
+      right: calc( (100vw - 810px) / 2);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      left: 15px;
+      top: 14.5px;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      left: 15px;
+      bottom: 15px;
+    }
   }
 
   &.fp-prev {
-    
+    left: calc( (100vw - 800px) / 2);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    &:active {
+      left: calc( (100vw - 810px) / 2);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      right: 15px;
+      top: 14.5px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+}
+
+
+
+@media screen and (max-height: 880px) {
+  .fp-slidesNav.bottom {
+    bottom: 70px;
+  }
+  .infographic-container .infographic-inner-wrapper {
+    margin: 0 auto 200px;
+  }
+
+  .infographic-title {
+    margin: 20px 0;
   }
 }
