@@ -115,7 +115,7 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: $apogee;
+    background: $ezra;
     top: 3px;
   }
 
@@ -141,14 +141,14 @@
     position: absolute;
     left: 2px;
     top: 2px;
-    background: $apogee;
+    background: #ff7396;
   }
 
   .research-img-searchbar {
     width: 170px;
     height: 8px;
     border-radius: 3px;
-    border: 2px solid $apogee;
+    border: 2px solid #ff7396;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -159,7 +159,7 @@
       content: '';
       height: 6px;
       width: 40px;
-      border: 2px solid $apogee;
+      border: 2px solid #ff7396;
       position: absolute;
         bottom: -20px;
     }
@@ -347,7 +347,7 @@
 .build-text {
   position: absolute;
   height: 2px;
-  background: $apogee;
+  background: #ff7396;
 
   &-1 {
     top: 18px;
@@ -554,7 +554,7 @@
   margin: 20px auto 0;
   width: 70%;
   height: 100px;
-  border: 2px solid $apogee;
+  border: 2px solid #ff7396;
 }
 
 .test-img-section3 {
@@ -569,7 +569,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 2px solid $apogee;
+  border: 2px solid #ff7396;
   position: relative;
 
   &::after {
@@ -577,7 +577,7 @@
     position: absolute;
     bottom: -10px;
     height: 2px;
-    background: $apogee;
+    background: #ff7396;
     width: 100%;
   }
 }
